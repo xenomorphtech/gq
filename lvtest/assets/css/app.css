@@ -1,0 +1,20 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+#light {
+  @apply mt-8 mx-auto max-w-xl text-center;
+}
+
+#light .meter {
+  @apply mb-8 h-12 flex bg-slate-300 rounded-lg overflow-hidden;
+}
+
+#light .meter > span {
+  @apply bg-yellow-300 font-bold flex flex-col justify-center text-slate-900 whitespace-nowrap transition-all duration-1000 ease-in-out;
+}
+
+#light button {
+  @apply mx-1 py-2 px-4 border-slate-400 text-slate-700 font-medium border-2 rounded-lg transition ease-in-out duration-150 outline-none hover:bg-slate-300;
+}
